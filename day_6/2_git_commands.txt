@@ -1,0 +1,17 @@
+# Git Configuration
+1. git config --global user.name "<your-username>"
+2. git config --global user.email "<your-email>"
+
+3. git config --global user.name
+4. git config --global user.email
+
+
+5. git init
+    It initializes a local repository
+6. git status
+    Shows all the changes needed to be added and committed
+7. git add .
+    Adds all the changes to the git repo
+
+8. .gitignore => There are some files or folders that should not be committed and
+    pushed to github. Such files and folders are kept in the .gitignore file

@@ -1,0 +1,20 @@
+# A same project in production can have multiple versions. These versions are maintained using a version
+control system
+# If there was no version control, then code sharing would have been difficult. It could be done either
+sharing from google-drive or pen-drive which is not efficient.
+# So we need version control system for two major reasons:
+    1. For code collaboration
+    2. For version maintenance
+
+# There are several version control systems like git, mercurial, etc. Git is among the most famous ones
+
+
+# The code written in your local system should be kept somewhere in the cloud for the safety purpose.
+# We can again keep our code to google-drive or some other cloud storage. But, they do not understand
+  VCS (Version Control System).
+# So, we keep our code in such cloud platforms which understand VCS. For example: Github, Gitlab,
+Bitbucket etc.
+
+# In this session we use git and github.
+
+
