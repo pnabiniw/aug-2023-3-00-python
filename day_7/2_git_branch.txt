@@ -1,0 +1,11 @@
+# There may be several features in a project divided among the developers. Such features are coded by
+the developers in their respective branches
+
+1. git branch
+    It shows all the branches and highlights the current branch
+
+2. git checkout <branch_name>
+    It leaves the current branch and jumps to the branch name provided
+
+3. git checkout -b <branch_name>
+    It creates a new branch and jumps to that branch
