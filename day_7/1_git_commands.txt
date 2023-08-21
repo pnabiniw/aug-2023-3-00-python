@@ -5,3 +5,8 @@
     Here "git remote add" is the command to add the remote alias name
 
 3. git remote -v
+    List all the remotes in the repo
+4. git remote remove origin
+    It removes remote from the local repo
+
+
