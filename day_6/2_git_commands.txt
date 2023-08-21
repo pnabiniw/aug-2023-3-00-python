@@ -12,6 +12,11 @@
     Shows all the changes needed to be added and committed
 7. git add .
     Adds all the changes to the git repo
+8. git commit -m "<commit-message>"
 
-8. .gitignore => There are some files or folders that should not be committed and
+9. git remote add origin <remote-ssh-link>
+
+
+
+Note: .gitignore => There are some files or folders that should not be committed and
     pushed to github. Such files and folders are kept in the .gitignore file
