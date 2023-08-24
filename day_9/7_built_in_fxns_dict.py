@@ -14,5 +14,3 @@ print(str(student))  # '{"name": "jon", "address": "KTM"}'
 # type()
 # It gives type of the object passed as an argument
 print(type(student))  # dictionary
-
-
