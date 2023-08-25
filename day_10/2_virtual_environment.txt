@@ -15,8 +15,22 @@ Commands for Virtual Environment
 
 3. deactivate
     => It deactivates the environment
-4. pip freeze
+
+4. pip install <package_name>  # requests
+    => It installs a python package
+5. pip freeze
     => It lists all the installed packages in the environment
+6. pip freeze > requirements.txt
+    => Lists all the packages of the venv in requirements.txt file
+
+7. pip install -r requirements.txt
+    => Recursively installs all the packages listed in the requirements.txt file
+
+8. pip uninstall <package_name>
+    => Uninstalls a package from the venv
+
+9. pip install --upgrade pip
+    => Upgrades the pip version
 
 # If we install a package with virtual environment activated, then the package is accessible for that
 # environment only. It is not installed globally. Virtual environment is only for the pip packages
