@@ -24,6 +24,7 @@ data = [(10, 12), (3, 5), (2, 1), (40, 10), (3, 8)]
 def get_second_element(element):  # element = (10, 12)
     return element[1]
 
+
 data.sort(key=get_second_element)
 print(data)
 

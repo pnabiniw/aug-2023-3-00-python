@@ -33,9 +33,7 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def pick_evens(element):
-    if element % 2 == 0:
-        return True
-    return False
+    return element % 2 == 0
 
 
 result = list(filter(pick_evens, nums))
