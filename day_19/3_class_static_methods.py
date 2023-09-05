@@ -24,6 +24,9 @@ print(p1.age)  # 25
 p2 = Person.age_from_year(1992)
 print(p2.age)  # 31
 
+print(p2.grade(10))  # I study in grade 10
+
+
 # Here "age_from_year" method is a class method and such type of method is also called as a
 # factory method
 
