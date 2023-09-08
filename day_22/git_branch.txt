@@ -3,3 +3,8 @@ Commands:
 2. git checkout <branch_name> => switch to the branch name provided
 3. git checkout -b <new_branch_name> => creates a new branch and switch to that branch
 4. git merge <branch_name> => merges the code from the branch name provided to the current branch
+
+
+# Pull Request
+1. Normally, we should not merge our code from different branches to the main branch directly / locally
+2. If we want to merge our changes to the main branch then it should done through PR (Pull Request)
