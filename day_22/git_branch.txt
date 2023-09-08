@@ -7,4 +7,6 @@ Commands:
 
 # Pull Request
 1. Normally, we should not merge our code from different branches to the main branch directly / locally
-2. If we want to merge our changes to the main branch then it should done through PR (Pull Request)
+2. If we want to merge our changes to the main branch then it should be done through PR (Pull Request).
+3. After your PR get merged by your reviewer then you should pull the code to local by using:
+    "git pull" or "git pull origin <branch_name>"
