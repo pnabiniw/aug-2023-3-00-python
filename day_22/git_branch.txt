@@ -1,0 +1,5 @@
+Commands:
+1. git branch => Shows all the branch and highlights the current branch
+2. git checkout <branch_name> => switch to the branch name provided
+3. git checkout -b <new_branch_name> => creates a new branch and switch to that branch
+4. git merge <branch_name> => merges the code from the branch name provided to the current branch
