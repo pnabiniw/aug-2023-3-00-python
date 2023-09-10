@@ -1,0 +1,28 @@
+1. Each python file inside a folder is a python module.
+2. A folder containing all the python modules is a python package.
+Python package sometimes has an __init__.py file
+3. Collection of all the python packages is called a python library
+4. Module name follows the rules of identifier naming.
+
+
+# We can create our own local python library or can import libraries externally.
+# To import external libraries we should first install in our local venv. That is done using:
+    pip install <library_name>
+    This command installs the python library from "PyPI". PyPI is the cloud storage for most of the
+    python libraries. We can also upload our own libraries and make it available globally
+
+
+Variations while importing libraries, functions and classes in a python file
+
+=> import json
+=> import pandas as <alias_name>
+=> from <module> import <function_or_class>
+=> from <package> import <module>
+=> from <package.module> import <function_or_class>
+
+
+from day_22 import test
+result = test.add()
+
+from day_22.test import add
+result = add()
