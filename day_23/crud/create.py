@@ -24,6 +24,4 @@ def create_student():
             fp.write(json.dumps(students, indent=2))
     print("Student Added Successfully!!")
     choice = input("Do you want to continue? (y/n) ")
-    if choice.lower() == 'y':
-        return True
-    return False
+    return choice.lower() == "y"
