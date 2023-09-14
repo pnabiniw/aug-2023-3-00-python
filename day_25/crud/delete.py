@@ -1,19 +1,16 @@
-import json
-
-filename = "students.json"
-
+from estd_connection import estd_connection
 
 def delete_student():
+    cursor = estd_connection()
     student_id = input("Enter the student id ")
-    with open(filename, "r") as fp:
-        students = json.loads(fp.read())
-    filtered_student = list(filter(lambda x: x["id"] == student_id, students))
-    if filtered_student:
-        student = filtered_student[0]
-        students.remove(student)
-        with open(filename, "w") as fp:
-            fp.write(json.dumps(students, indent=2))
+    sql = f"""
+    DELETE FROM STUDENT WHERE ID='{student_id}'
+    """
+    try:
+        cursor.execute(sql)
+    except:
+        print("Invalid Student Id")
     else:
-        print("Invalid Student Id!!")
+        print("Student Deleted Successfully !!")
     choice = input("Do you want to continue? (y/n) ")
     return choice.lower() == "y"

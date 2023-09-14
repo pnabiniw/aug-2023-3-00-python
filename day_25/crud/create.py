@@ -8,7 +8,8 @@ def create_student():
     age = input("Enter student age ")
     address = input("Enter student address ")
 
-    sql = """
+    sql = f"""
+    INSERT INTO STUDENT (ID, NAME, AGE, ADDRESS) VALUES ('{id}', '{name}', {age}, '{address}')
     """
     cursor.execute(sql)
     print("Student Added Successfully!!")
