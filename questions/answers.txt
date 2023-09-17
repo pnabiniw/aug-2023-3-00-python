@@ -1,0 +1,142 @@
+q1. Set is Mutable
+q2. a) level
+    b) "Hello", "world", "python", "is", "high"
+    c) "Hello", "python", "high"
+    d) "python", "is", "high"
+    e) []
+    f) "python", "is", "high", "level"
+    g) []
+    h) "language", "level", "high", "is"
+    i) "language", "level", "high", "is", "python", "world", "hello"
+
+q3. 1. Valid
+    2. Invalid
+    3. Valid
+    4. Valid
+    5. Valid
+    6. Valid
+    7. Invalid
+    8. Invalid
+
+q4.
+d = {"name": "Jon", "age": 21, "id": 1}
+print(d.keys())
+print(d.values())
+print(d.items())  # [("name", "Jon"), ("age": 21), ("id", 1)]
+
+for k, v in d.items():
+    print(k)
+    print(v)
+
+q5. 1. KeyError   2. None
+
+q6.
+a = 1
+b = 2
+a, b = b, a  # Packing and unpacking
+
+for index, value in enumerate(names):
+    print(index)
+    print(value)
+
+
+q7. In order => Positional, Keyword, *args, **kwargs
+
+q8.
+data = [(1, 2, 3), (15, 5), (8, 1, 1), (20, 21), (10, 20, 30)]
+
+result = filter(lambda x: sum(x) > 10, data)
+print(list(result))
+
+
+q9.
+from functools import reduce
+
+result = reduce(lambda x, y: x * y, range(1, 6))
+print(result)
+
+
+q10.
+class A:
+    name = "Harry"   # class attribute
+
+    def __init__(self, age):   # constructor
+        self.age = age  # instance attribute
+
+q11.
+1. Types => Single Inheritance, Multiple, Multilevel, Hierarchical, Hybrid
+2. MRO order => E, D, B, C, A
+
+q12.
+class A:
+    __a = 1  # Private
+    _b = 2 # Protected
+    c = 3 # Public
+
+    def __message(self):   # Private method
+        return "Hello"
+
+q13.
+=> Method Overloading is not possible in python
+=> Method overriding is possible in python. Example given below:
+class A:
+    def message(self, m):
+        print("Parent")
+        return m
+
+class B(A):
+    def message(self, m):
+        super().message(m)
+        print("Child")
+        return m
+
+
+
+q14.
+class A:
+    a = 1  # class attribute
+
+    def __gt__(self, other):   # Magic Method
+        return self.a > other.a
+
+obj1 = A()
+print(A.a)  # 1
+print(obj1.a)  # 1
+
+obj1.a = 5
+print(obj1.a)  # 5
+
+obj2 = A()
+obj2.a = 7
+print(obj2.a)  # 7
+print(obj1.a > obj2.a)  # False
+
+print(obj1 > obj2)
+
+
+q15.
+Three types of methods are instance method, clas method and static method. Instance method are normal methods with self as parameter.
+Example of static and class method is given below:
+class Person:
+    def __init__(self, age):
+        self.age = age
+
+    @classmethod
+    def from_birth_year(cls, year):   # Factory Method
+        age = 2023 - year
+        return Person(age)
+
+    @staticmethod
+    def message():
+        return "Awesome Person"
+
+
+p1 = Person(23)
+p2 = Person.from_birth_year(1990)
+print(p1.age)
+print(p2.age)
+print(p1.message())
+
+
+q16. 2. World
+
